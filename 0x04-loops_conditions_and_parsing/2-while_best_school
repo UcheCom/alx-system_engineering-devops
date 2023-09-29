@@ -2,7 +2,7 @@
 # This diplays "Best School" 10 times using while loop.
 
 i=1
-while ($i -lt 10)
+while [ $i -lt 10 ]
 do
 	echo "Best School"
 	((i++))
