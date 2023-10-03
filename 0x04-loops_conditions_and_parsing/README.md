@@ -4,8 +4,7 @@
 
 #### Read or watch:
 
-* [The <code>for</code> loop" target=“_blank”>The <code>for</code> loop</a> </li>
-<li><a href=](https://intranet.alxswe.com/rltoken/wT98UJfv_E2tk4yP9PcLLw)
+* [The <code>for</code> loop" target](https://intranet.alxswe.com/rltoken/wT98UJfv_E2tk4yP9PcLLw)
 * [Variable assignment and arithmetic](https://intranet.alxswe.com/rltoken/olvOKX699pq50rkHRE5cSA)
 * [Comparison operators](https://intranet.alxswe.com/rltoken/HxohzllkOWh0t4dy_HptIQ)
 * [File test operators](https://intranet.alxswe.com/rltoken/g8of2ABPEJfCNtPrDQaqVw)
