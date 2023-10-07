@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Scripts that start listening on a specific port for a connection
+
+nc -l 98
