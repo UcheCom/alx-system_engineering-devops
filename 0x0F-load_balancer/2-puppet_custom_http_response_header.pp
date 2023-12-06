@@ -4,7 +4,7 @@ package { 'nginx':
   ensure => installed,
 }
 
-file_line { 'install':
+file_line { 'add header':
   ensure => 'present',
   path   => '/etc/nginx/sites-enabled/default',
   after  => 'server_name _;',
@@ -17,5 +17,4 @@ file { '/var/www/html/index.html':
 
 service { 'nginx':
   ensure  => running,
-  require => Package['nginx'],
 }
