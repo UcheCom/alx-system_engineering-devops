@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Debugging and listening on port 80
+# A symbolic link from the Nginx default site configuration in 
+# sites-available to sites-enabled was created.
+# This is a common setup in Nginx.
+# 'ln' creates the links between files, '-s' creates symbolic link(symlink)
+# and '-f' forces the creation of the link- even if it already there.
+
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
