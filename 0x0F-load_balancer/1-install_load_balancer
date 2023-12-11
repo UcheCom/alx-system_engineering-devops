@@ -6,6 +6,7 @@ add-apt-repository ppa:vbernat/haproxy-2.8
 apt-get -y update
 apt-get -y install haproxy=2.8.\*
 
+sudo cp /etc/haproxy/haproxy.cfg haproxy_default.backup
 server_conf=\
 "
 frontend http
