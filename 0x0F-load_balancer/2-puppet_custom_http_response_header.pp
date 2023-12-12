@@ -19,3 +19,8 @@ exec { '/usr/bin/env apt-get -y update' : }
 -> service { 'nginx':
   ensure  => running,
 }
+
+exec {'restart Nginx':
+  command  => 'sudo service nginx restart',
+  provider => shell,
+}
