@@ -5,7 +5,7 @@ exec { '/usr/bin/env apt-get -y update' : }
   ensure => installed,
 }
 
--> file_line { 'add_header':
+-> file_line { 'add header':
   ensure => 'present',
   path   => '/etc/nginx/sites-enabled/default',
   line   => '\tadd_header X-served-By ${hostname};',
@@ -13,7 +13,7 @@ exec { '/usr/bin/env apt-get -y update' : }
 }
 
 -> file { '/var/www/html/index.html':
-  content => 'Holberton School!!',
+  content => 'Holberton School!',
 }
 
 -> service { 'nginx':
