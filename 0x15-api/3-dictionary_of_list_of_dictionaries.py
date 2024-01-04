@@ -18,9 +18,9 @@ if __name__ == '__main__':
         tasks = req.json()
 	dic_t[USER_ID] = []
         for t in tasks:
-            TASK_COMPLETED_STATUS = task.get('completed')
-            TASK_TITLE = task.get('title')
-            users_dict[USER_ID].append({
+            TASK_COMPLETED_STATUS = t.get('completed')
+            TASK_TITLE = t.get('title')
+            dic_t[USER_ID].append({
                 "task": TASK_TITLE,
                 "completed": TASK_COMPLETED_STATUS,
                 "username": USERNAME
