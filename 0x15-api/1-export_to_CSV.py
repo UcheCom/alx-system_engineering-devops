@@ -12,9 +12,9 @@ if __name__ == '__main__':
     username = user.get('username')
     tasks = requests.get(url + "todos", params={"userId": user_id}).json()
 
-    filename = "'{}.csv'.format(user_id)"
-    with open(filename, 'w', newline="") as csvfil:
-        writer = csv.writer(csvfil, quoting=csv.QUOTE_ALL)
-        [writer.writerow(
-             [user_id, username, t.get("completed"), t.get("title")]
-         ) for t in tasks]
+    with open('{}.csv'.format(user_id), 'w') as csvfile:
+        for t in tasks:
+            completed = t.get('completed')
+            titletask = t.get('title')
+            csvfile.write('"{}","{}","{}","{}"\n'.format(
+                user_id, username, completed, titletask))
