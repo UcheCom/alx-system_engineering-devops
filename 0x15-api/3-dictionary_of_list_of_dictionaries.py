@@ -27,6 +27,5 @@ if __name__ == '__main__':
                 "username": USERNAME
             })
 
-    filename = 'todo_all_employees.json'
-    with open(filename, 'w') as jsonfile:
-        json.dump(filename, jsonfile)
+    with open('todo_all_employees.json', 'w') as jsonfile:
+        json.dump(dic_t, jsonfile)
