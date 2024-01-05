@@ -7,7 +7,9 @@ import sys
 
 if __name__ == '__main__':
     url = "https://jsonplaceholder.typicode.com/users"
-    Users = requests.get(url).json()
+
+    reqt = requests.get(url)
+    Users = reqt.json()
 
     dic_t = {}
     for u in Users:
