@@ -2,8 +2,8 @@
 """ Defines the function that queries the Reddit API and returns
    the number of subscribers.
 """
-from sys import argv
 from requests import get
+from sys import argv
 
 
 def number_of_subscribers(subreddit):
