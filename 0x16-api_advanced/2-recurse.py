@@ -7,7 +7,8 @@ from requests import get
 
 def recurse(subreddit, hot_list=[], after="", count=0):
     """queries the all articles title"""
-    url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
+    global after
+    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     headers = {'User-Agent': 'api_advanced-project'}
     params = {
         "after": after,
