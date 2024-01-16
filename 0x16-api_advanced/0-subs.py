@@ -10,8 +10,8 @@ def number_of_subscribers(subreddit):
     """ This returns the number subscribers,
        returns 0 if the request is invalid
     """
-    url = 'https://www.reddit.com/r/{}/about.json.format(subreddit)'
-    user = {'User-agent': 'Lizzie'}
+    url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
+    user = {'User-agent': 'Uchecm1'}
     response = get(url, headers=user)
     resp = response.json()
 
