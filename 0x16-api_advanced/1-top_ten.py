@@ -2,8 +2,8 @@
 """ Defines the function that queries the Reddit API and prints
     the titles of the first 10 hot posts listed
 """
-from sys import argv
 from requests import get
+from sys import argv
 
 
 def top_ten(subreddit):
