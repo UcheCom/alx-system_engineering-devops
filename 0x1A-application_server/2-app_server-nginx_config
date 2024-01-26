@@ -8,9 +8,9 @@ server {
         # Customize HTTP response header
         add_header X-Serverd-By 263805-web-01;
 
-        # serve /airbnb-onepage/ route on AirBnB_clone_v2
-        location = /airbnb-onepage/ {
-          proxy_pass http://127.0.0.1:5000/airbnb-onepage/;
+        # serve /airbnb-onepage/ route on AirBnB_clone_v3
+        location /airbnb-onepage/ {
+          proxy_pass http://0.0.0.0:5000/airbnb-onepage/;
         }
 
         error_page 404 /404.html;
